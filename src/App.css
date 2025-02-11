@@ -3,7 +3,11 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #111;
+  background: linear-gradient(#0000007a 38%,#3c9940a8 ),url("photo.jpg");
+  background-position: top;
+  background-size: cover;
+  
+  
 }
 * {
   padding: 0px;
@@ -66,9 +70,12 @@ button:hover{
   font-size: 30px;
   .number {
     padding: 10px;
+  overflow: scroll;
+    
   }
   .result {
     direction: rtl;
     padding: 10px;
+    overflow: scroll;
   }
 }
