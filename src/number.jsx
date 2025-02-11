@@ -110,7 +110,7 @@ function Number() {
             setvalue([...value, "*"]);
           }}
         >
-          <p  style={{transform:'rotate(45deg)' , color:"black"}}>+</p>
+          <span  style={{transform:'rotate(45deg)' , color:"black"}}>+</span>
         </button>
         <button
           onClick={() => {
@@ -130,6 +130,10 @@ function Number() {
         >
           /
         </button>
+        <button className="ac" onClick={()=> {
+          setvalue([]) 
+          setresult("")
+        }  }>AC</button>
         <button
           onClick={() => {
             setvalue([...value, "+"]);
@@ -137,10 +141,6 @@ function Number() {
         >
           +
         </button>
-        <button className="ac" onClick={()=> {
-          setvalue([]) 
-          setresult("")
-        }  }>AC</button>
         
       </div>
     </div>
