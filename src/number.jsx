@@ -105,11 +105,12 @@ function Number() {
       </div>
       <div className="opp">
       <button
+         
           onClick={() => {
             setvalue([...value, "*"]);
           }}
         >
-          *
+          <p  style={{transform:'rotate(45deg)' , color:"black"}}>+</p>
         </button>
         <button
           onClick={() => {
@@ -118,13 +119,8 @@ function Number() {
         >
           -
         </button>
-        <button
-          onClick={() => {
-            setvalue([...value, "+"]);
-          }}
-        >
-          +
-        </button>
+
+          <button onClick={()=>calculater()}>=</button>
         </div>
         <div className="opp">
         <button
@@ -134,7 +130,13 @@ function Number() {
         >
           /
         </button>
-        <button onClick={()=>calculater()}>=</button>
+        <button
+          onClick={() => {
+            setvalue([...value, "+"]);
+          }}
+        >
+          +
+        </button>
         <button className="ac" onClick={()=> {
           setvalue([]) 
           setresult("")
