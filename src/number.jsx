@@ -120,7 +120,11 @@ function Number() {
           -
         </button>
 
-          <button onClick={()=>calculater()}>=</button>
+          <button className="ac" onClick={()=> {
+          setvalue([]) 
+          setresult("")
+        }  }>AC</button>
+        
         </div>
         <div className="opp">
         <button
@@ -130,10 +134,6 @@ function Number() {
         >
           /
         </button>
-        <button className="ac" onClick={()=> {
-          setvalue([]) 
-          setresult("")
-        }  }>AC</button>
         <button
           onClick={() => {
             setvalue([...value, "+"]);
@@ -141,7 +141,8 @@ function Number() {
         >
           +
         </button>
-        
+        <button onClick={()=>calculater()}>=</button>
+
       </div>
     </div>
   );
