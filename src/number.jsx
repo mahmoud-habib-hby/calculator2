@@ -110,7 +110,7 @@ function Number() {
             setvalue([...value, "*"]);
           }}
         >
-          <span  style={{transform:'rotate(45deg)' , color:"black"}}>+</span>
+          <p  style={{transform:'rotate(45deg)' , color:"black"}}>+</p>
         </button>
         <button
           onClick={() => {
