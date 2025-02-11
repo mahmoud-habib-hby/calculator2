@@ -70,12 +70,12 @@ button:hover{
   font-size: 30px;
   .number {
     padding: 10px;
-  overflow: scroll;
+  overflow: auto;
     
   }
   .result {
     direction: rtl;
     padding: 10px;
-    overflow: scroll;
+    overflow: auto;
   }
 }
