@@ -1,26 +1,31 @@
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  background: linear-gradient(#0000007a 38%,#3c9940a8 ),url("photo.jpg");
+     background: linear-gradient(to right, #fafffa -241%, #000e2d, #fafffa 348%);
   background-position: top;
   background-size: cover;
-  
-  
+   
 }
 
 * {
   padding: 0px;
   margin: 0px;
 }
+#root{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.calculater{
+  width:40%;
+
+}
 p{
   color: #ffffff;
 }
-#root{
-  width: 70%;
-  
-}
+
 
 .contaner {
   background-color: #444;
@@ -29,11 +34,11 @@ p{
 .numbers {
   width: 100%;
   button {
-    font-size: 50px;
+    font-size: 40px;
     background-color: orange;
     padding: 4px 12px;
     border-radius: 10px;
-    margin: 8px;
+    margin: 5px;
     cursor: pointer;
   }
   display: flex;
@@ -53,11 +58,11 @@ button:hover{
   display: flex;
   justify-content: space-around;
   button {
-    font-size: 50px;
+    font-size: 40px;
     background-color: rgb(255, 255, 255);
     padding: 4px 12px;
     border-radius: 10px;
-    margin: 8px;
+    margin: 5px 5px 10px 5px ;
     cursor: pointer;
   }
   .ac {
@@ -78,5 +83,20 @@ button:hover{
     direction: rtl;
     padding: 10px;
     overflow: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .calculater {
+    width: 50%;
+  }
+}
+@media (max-width: 750px) {
+  .calculater {
+    width: 60vw;
+  }
+}
+@media (max-width: 390px) {
+  .calculater {
+    width: 80vw;
   }
 }
